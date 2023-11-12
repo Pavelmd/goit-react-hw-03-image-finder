@@ -1,16 +1,34 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import css from './StyleContainer.module.css'
+import React from 'react';
+import { Component } from 'react';
+import { Searchbar } from './SearchBar/Searchbar';
+
+
+export class App extends Component {
+  state = {
+    images: [],
+    isLoading: false,
+    currentSearch: '',
+    pageNr: 1,
+    modalOpen: false,
+    modalImg: '',
+    modalAlt: '',
+  };
+
+
+  render() {
+    return (
+      <div className = {css.container}>
+       <Searchbar onSubmit={this.handleSubmit} />
+      </div>
+    )
+  }
+}
+
+
+
+
+
+
+
+
