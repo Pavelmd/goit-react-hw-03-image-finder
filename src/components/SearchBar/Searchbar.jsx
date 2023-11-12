@@ -1,4 +1,4 @@
-import  css from './SearchBar.module.css'
+import css from './SearchBar.module.css';
 export const Searchbar = ({ onSubmit }) => (
   <header className={css.Searchbar}>
     <form className={css.SearchForm} onSubmit={onSubmit}>
