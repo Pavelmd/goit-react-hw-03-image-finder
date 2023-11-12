@@ -2,6 +2,7 @@ import css from './StyleContainer.module.css'
 import React from 'react';
 import { Component } from 'react';
 import { Searchbar } from './SearchBar/Searchbar';
+import { fetchImages } from './Api/fetchImages';
 
 
 export class App extends Component {
