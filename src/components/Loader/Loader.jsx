@@ -1,4 +1,4 @@
-import { Audio } from 'react-loader-spinner';
+import { Grid } from 'react-loader-spinner';
 import css from './Loader.module.css';
 
 export const Loader = () => (
